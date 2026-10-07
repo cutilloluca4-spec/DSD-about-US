@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Come funziona — Digital Sports Desk</title>
+<meta name="description" content="Dashboard segreteria, vista da campo e iscrizione guidata: come funziona Digital Sports Desk." />
+<script src="js/vendor/tailwind-browser.js"></script>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/site.css" />
+</head>
+<body class="bg-[#F2F4F4] text-[#12181B] antialiased">
+<svg style="position:absolute;width:0;height:0" aria-hidden="true" focusable="false">
+  <defs>
+    <style>.cls-1{fill:#4f9eaf;}.cls-2{fill:#7dcad7;}</style>
+    <g id="monogram">
+      <polygon class="cls-1" points="116.88 27.21 146.17 27.2 139.57 0 110.29 0 116.88 27.21"/>
+      <polygon class="cls-1" points="92.91 79.76 122.19 79.76 115.61 52.56 86.53 52.56 92.91 79.76"/>
+      <polygon class="cls-1" points="28.17 40.56 22.88 18.56 30.21 18.56 33.75 18.56 29.29 0 0 0 10.71 44.54 19.16 79.76 48.44 79.76 44 61.21 33.12 61.21 28.17 40.56"/>
+      <path class="cls-2" d="M78.16,51.28l-1.61-6.73-6.46-26.85C67.59,7.32,58.3,0,47.63,0h-11.09s4.46,18.55,4.46,18.55h6.18c2.69,0,5.01,1.83,5.64,4.44l5.98,24.84,1.49,6.21c.11.47.17.94.17,1.39,0,2.77-2.22,5.75-5.81,5.75h-3.4s4.45,18.55,4.45,18.55h0c14.93,0,25.94-13.96,22.46-28.48Z"/>
+      <polygon class="cls-1" points="175.09 40.56 169.8 18.56 177.14 18.56 180.67 18.56 176.21 0 146.92 0 157.64 44.54 166.08 79.76 195.36 79.76 190.92 61.21 180.04 61.21 175.09 40.56"/>
+      <path class="cls-2" d="M225.08,51.28l-1.61-6.73-6.46-26.85C214.51,7.32,205.23,0,194.55,0h-11.09s4.46,18.55,4.46,18.55h6.18c2.69,0,5.01,1.83,5.64,4.44l5.98,24.84,1.49,6.21c.11.47.17.94.17,1.39,0,2.77-2.22,5.75-5.81,5.75h-3.4s4.45,18.55,4.45,18.55h0c14.93,0,25.94-13.96,22.46-28.48Z"/>
+      <path class="cls-2" d="M129.44,79.75h0c14.93.01,25.93-13.95,22.44-28.46l-3.86-16.02-29.28.02h-7.22S103.03,0,103.03,0h-.02c-14.92,0-25.91,13.95-22.42,28.46l3.87,16.08h29.29s0,0,0,0h7.22l8.47,35.2Z"/>
+    </g>
+  </defs>
+</svg>
+<header id="siteNav" class="site-nav">
+  <div class="site-nav__inner">
+    <a href="index.html" class="site-nav__logo" aria-label="D.S.D. — Digital Sports Desk">
+      <svg viewBox="0 0 225.73 79.76" xmlns="http://www.w3.org/2000/svg"><use href="#monogram"/></svg>
+    </a>
+    <nav class="site-nav__links">
+      <a href="index.html">Home</a>
+      <a href="chi-siamo.html">Chi siamo</a>
+      <a href="come-funziona.html" class="is-active">Come funziona</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+    <a href="chi-siamo.html#portale" data-portal class="btn-dsd-primary site-nav__cta">Entra nel portale</a>
+    <button id="navToggle" class="site-nav__toggle" aria-label="Apri il menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div id="navMobile" class="site-nav__mobile">
+    <a href="index.html">Home</a>
+    <a href="chi-siamo.html">Chi siamo</a>
+    <a href="come-funziona.html" class="is-active">Come funziona</a>
+    <a href="contatti.html">Contatti</a>
+    <a href="chi-siamo.html#portale" data-portal class="btn-dsd-primary">Entra nel portale</a>
+  </div>
+</header>
+<main id="top">
+
+  <header class="page-header">
+    <div class="page-header__bg" style="background-image:url('assets/img/header-pallavolo.jpg')"></div>
+    <div class="page-header__scrim"></div>
+    <div class="page-header__content">
+      <p class="eyebrow eyebrow--light reveal-up">Come funziona</p>
+      <h1 class="page-header__title reveal-up">Un'unica fonte di verità,<br>tre punti di vista.</h1>
+      <p class="page-header__lead reveal-up">Non un modulo infinito, ma tre schermate su misura per chi le usa davvero: segreteria, allenatori e famiglie.</p>
+    </div>
+  </header>
+
+  <section class="section section--light">
+    <div class="section__inner">
+
+      <div id="dashboard" class="feature-row reveal-up">
+        <div class="feature-row__visual">
+          <div class="mock-dashboard">
+            <span class="mock-dashboard__label">Scadenziario</span>
+            <div class="mock-dashboard__row"><span class="mock-avatar"></span><span>Marco Rossi</span><span class="cartellino cartellino--valido">Validato</span></div>
+            <div class="mock-dashboard__row"><span class="mock-avatar"></span><span>Giulia Bianchi</span><span class="cartellino cartellino--in-scadenza">In verifica</span></div>
+            <div class="mock-dashboard__row"><span class="mock-avatar"></span><span>Ahmed El Amrani</span><span class="cartellino cartellino--scaduto">Scaduto</span></div>
+          </div>
+        </div>
+        <div class="feature-row__text">
+          <span class="feature-row__index">01</span>
+          <h3>Dashboard segreteria</h3>
+          <p>Le urgenze prima di tutto: certificati scaduti, tesseramenti in scadenza entro 30 giorni, moduli incompleti — non un elenco alfabetico. Ogni cartellino è a colpo d'occhio: validato, in verifica o scaduto.</p>
+        </div>
+      </div>
+
+      <div id="vista-campo" class="feature-row feature-row--reverse reveal-up">
+        <div class="feature-row__visual">
+          <div class="mock-phone">
+            <div class="mock-phone__notch"></div>
+            <div class="mock-phone__screen">
+              <span class="mock-phone__label">Vista da campo</span>
+              <div class="mock-phone__athlete"><span class="dot dot--ok"></span>Marco Rossi</div>
+              <div class="mock-phone__athlete"><span class="dot dot--warn"></span>Giulia Bianchi</div>
+              <div class="mock-phone__athlete"><span class="dot dot--danger"></span>Ahmed El Amrani</div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-row__text">
+          <span class="feature-row__index">02</span>
+          <h3>Vista da campo</h3>
+          <p>Allenatori e maestri vedono solo ciò che serve prima di scendere in campo: un semaforo di idoneità per atleta, senza accesso ai dati sanitari sensibili. Tutto dallo smartphone, anche offline a bordo campo.</p>
+        </div>
+      </div>
+
+      <div id="iscrizione" class="feature-row reveal-up">
+        <div class="feature-row__visual">
+          <div class="mock-steps">
+            <div class="mock-steps__step is-done"><span>1</span>Dati e categoria</div>
+            <div class="mock-steps__step is-done"><span>2</span>Anagrafica</div>
+            <div class="mock-steps__step is-active"><span>3</span>Documenti sanitari</div>
+            <div class="mock-steps__step"><span>4</span>Consensi</div>
+          </div>
+        </div>
+        <div class="feature-row__text">
+          <span class="feature-row__index">03</span>
+          <h3>Iscrizione guidata</h3>
+          <p>Il modulo si scompone in 4 tappe progressive — dati, anagrafica, documenti sanitari, consensi — invece di una pagina infinita di campi obbligatori. Ogni famiglia firma solo ciò che riguarda davvero suo figlio.</p>
+        </div>
+      </div>
+
+      <div class="compare reveal-up">
+        <div class="compare__col compare__col--before">
+          <h3>Prima di DSD</h3>
+          <ul>
+            <li>Certificati ricevuti su WhatsApp, in ordine sparso</li>
+            <li>Scadenze tracciate a mano su un foglio Excel</li>
+            <li>Un modulo cartaceo unico per tutti i dati, sensibili compresi</li>
+            <li>Nessun modo rapido per sapere chi può scendere in campo</li>
+          </ul>
+        </div>
+        <div class="compare__col compare__col--after">
+          <h3>Con DSD</h3>
+          <ul>
+            <li>Un archivio digitale unico, sempre aggiornato</li>
+            <li>Avvisi automatici prima di ogni scadenza</li>
+            <li>Iscrizione a tappe, con consensi separati e minimizzazione dei dati</li>
+            <li>Vista da campo immediata, senza accesso ai dati sanitari</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section--dark section--cta">
+    <div class="section__inner section__inner--center">
+      <h2 class="section__title section__title--light reveal-up">Vuoi vederlo in funzione?</h2>
+      <p class="section__lead section__lead--light reveal-up">Il portale DSD è online: esplora la dashboard segreteria, lo scadenziario e la vista da campo.</p>
+      <a href="chi-siamo.html#portale" data-portal class="btn-dsd-primary reveal-up">Entra nel portale</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <a class="site-footer__brand-mark" href="index.html" aria-label="Digital Sports Desk — Home"><svg class="mono-svg" viewBox="0 0 225.73 79.76" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon class="m1" fill="#4f9eaf" points="116.88 27.21 146.17 27.2 139.57 0 110.29 0 116.88 27.21"/>
+      <polygon class="m1" fill="#4f9eaf" points="92.91 79.76 122.19 79.76 115.61 52.56 86.53 52.56 92.91 79.76"/>
+      <polygon class="m1" fill="#4f9eaf" points="28.17 40.56 22.88 18.56 30.21 18.56 33.75 18.56 29.29 0 0 0 10.71 44.54 19.16 79.76 48.44 79.76 44 61.21 33.12 61.21 28.17 40.56"/>
+      <path class="m2" fill="#7dcad7" d="M78.16,51.28l-1.61-6.73-6.46-26.85C67.59,7.32,58.3,0,47.63,0h-11.09s4.46,18.55,4.46,18.55h6.18c2.69,0,5.01,1.83,5.64,4.44l5.98,24.84,1.49,6.21c.11.47.17.94.17,1.39,0,2.77-2.22,5.75-5.81,5.75h-3.4s4.45,18.55,4.45,18.55h0c14.93,0,25.94-13.96,22.46-28.48Z"/>
+      <polygon class="m1" fill="#4f9eaf" points="175.09 40.56 169.8 18.56 177.14 18.56 180.67 18.56 176.21 0 146.92 0 157.64 44.54 166.08 79.76 195.36 79.76 190.92 61.21 180.04 61.21 175.09 40.56"/>
+      <path class="m2" fill="#7dcad7" d="M225.08,51.28l-1.61-6.73-6.46-26.85C214.51,7.32,205.23,0,194.55,0h-11.09s4.46,18.55,4.46,18.55h6.18c2.69,0,5.01,1.83,5.64,4.44l5.98,24.84,1.49,6.21c.11.47.17.94.17,1.39,0,2.77-2.22,5.75-5.81,5.75h-3.4s4.45,18.55,4.45,18.55h0c14.93,0,25.94-13.96,22.46-28.48Z"/>
+      <path class="m2" fill="#7dcad7" d="M129.44,79.75h0c14.93.01,25.93-13.95,22.44-28.46l-3.86-16.02-29.28.02h-7.22S103.03,0,103.03,0h-.02c-14.92,0-25.91,13.95-22.42,28.46l3.87,16.08h29.29s0,0,0,0h7.22l8.47,35.2Z"/></svg></a>
+      <p>La piattaforma per la gestione documentale delle Associazioni Sportive Dilettantistiche di Cremona e Brescia — tesseramenti, certificati medici e consensi in un unico posto.</p>
+    </div>
+    <div class="site-footer__cols">
+      <div class="site-footer__col"><h4>Prodotto</h4><a href="chi-siamo.html#prodotto">Il prodotto</a><a href="chi-siamo.html#funzioni">Cosa fa DSD</a><a href="come-funziona.html">Come funziona</a></div>
+      <div class="site-footer__col"><h4>Progetto</h4><a href="chi-siamo.html#ricerca">La ricerca sul campo</a><a href="chi-siamo.html#metodo">Il metodo</a><a href="contatti.html">Contatti</a></div>
+      <div class="site-footer__col"><h4>Portale</h4><a href="chi-siamo.html#portale" data-portal>Entra nel portale</a><a href="mailto:info@digitalsportsdesk.it">info@digitalsportsdesk.it</a></div>
+    </div>
+  </div>
+  <div class="site-footer__bottom"><span>© 2026 Digital Sports Desk. Pensato per chi vive lo sport dilettantistico ogni giorno.</span></div>
+</footer>
+<button id="backToTop" class="back-to-top" aria-label="Torna in cima">↑</button>
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<script src="js/portal.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

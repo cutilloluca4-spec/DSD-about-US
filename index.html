@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Digital Sports Desk — Gestione documentale per lo sport dilettantistico</title>
+<meta name="description" content="Digital Sports Desk: la piattaforma per la gestione documentale delle Associazioni Sportive Dilettantistiche di Cremona e Brescia." />
+<script src="js/vendor/tailwind-browser.js"></script>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/site.css" />
+</head>
+<body class="bg-[#F2F4F4] text-[#12181B] antialiased">
+<svg style="position:absolute;width:0;height:0" aria-hidden="true" focusable="false">
+  <defs>
+    <style>.cls-1{fill:#4f9eaf;}.cls-2{fill:#7dcad7;}</style>
+    <g id="monogram">
+      <polygon class="cls-1" points="116.88 27.21 146.17 27.2 139.57 0 110.29 0 116.88 27.21"/>
+      <polygon class="cls-1" points="92.91 79.76 122.19 79.76 115.61 52.56 86.53 52.56 92.91 79.76"/>
+      <polygon class="cls-1" points="28.17 40.56 22.88 18.56 30.21 18.56 33.75 18.56 29.29 0 0 0 10.71 44.54 19.16 79.76 48.44 79.76 44 61.21 33.12 61.21 28.17 40.56"/>
+      <path class="cls-2" d="M78.16,51.28l-1.61-6.73-6.46-26.85C67.59,7.32,58.3,0,47.63,0h-11.09s4.46,18.55,4.46,18.55h6.18c2.69,0,5.01,1.83,5.64,4.44l5.98,24.84,1.49,6.21c.11.47.17.94.17,1.39,0,2.77-2.22,5.75-5.81,5.75h-3.4s4.45,18.55,4.45,18.55h0c14.93,0,25.94-13.96,22.46-28.48Z"/>
+      <polygon class="cls-1" points="175.09 40.56 169.8 18.56 177.14 18.56 180.67 18.56 176.21 0 146.92 0 157.64 44.54 166.08 79.76 195.36 79.76 190.92 61.21 180.04 61.21 175.09 40.56"/>
+      <path class="cls-2" d="M225.08,51.28l-1.61-6.73-6.46-26.85C214.51,7.32,205.23,0,194.55,0h-11.09s4.46,18.55,4.46,18.55h6.18c2.69,0,5.01,1.83,5.64,4.44l5.98,24.84,1.49,6.21c.11.47.17.94.17,1.39,0,2.77-2.22,5.75-5.81,5.75h-3.4s4.45,18.55,4.45,18.55h0c14.93,0,25.94-13.96,22.46-28.48Z"/>
+      <path class="cls-2" d="M129.44,79.75h0c14.93.01,25.93-13.95,22.44-28.46l-3.86-16.02-29.28.02h-7.22S103.03,0,103.03,0h-.02c-14.92,0-25.91,13.95-22.42,28.46l3.87,16.08h29.29s0,0,0,0h7.22l8.47,35.2Z"/>
+    </g>
+  </defs>
+</svg>
+<header id="siteNav" class="site-nav site-nav--light">
+  <div class="site-nav__inner">
+    <a href="index.html" class="site-nav__logo" aria-label="D.S.D. — Digital Sports Desk">
+      <svg viewBox="0 0 225.73 79.76" xmlns="http://www.w3.org/2000/svg"><use href="#monogram"/></svg>
+    </a>
+    <nav class="site-nav__links">
+      <a href="index.html" class="is-active">Home</a>
+      <a href="chi-siamo.html">Chi siamo</a>
+      <a href="come-funziona.html">Come funziona</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+    <a href="chi-siamo.html#portale" data-portal class="btn-dsd-primary site-nav__cta">Entra nel portale</a>
+    <button id="navToggle" class="site-nav__toggle" aria-label="Apri il menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div id="navMobile" class="site-nav__mobile">
+    <a href="index.html" class="is-active">Home</a>
+    <a href="chi-siamo.html">Chi siamo</a>
+    <a href="come-funziona.html">Come funziona</a>
+    <a href="contatti.html">Contatti</a>
+    <a href="chi-siamo.html#portale" data-portal class="btn-dsd-primary">Entra nel portale</a>
+  </div>
+</header>
+<div id="intro" class="intro">
+  <video id="introVideo" class="intro__video" muted playsinline preload="auto">
+    <source src="assets/logo-intro-DSD.webm" type="video/webm" />
+    <source src="assets/logo-intro-DSD.mp4" type="video/mp4" />
+  </video>
+  <div class="intro-progress"><div class="intro-progress__bar" id="introBar"></div></div>
+  <button id="introSkip" class="intro__skip">Salta intro</button>
+</div>
+
+<main id="top">
+
+  <section class="hero hero--product">
+    <div class="hero__content">
+      <p class="eyebrow reveal-up">Per le Associazioni Sportive Dilettantistiche</p>
+      <h1 class="hero__title" id="heroTitle">La segreteria sportiva,<br>finalmente digitale.</h1>
+      <p class="hero__body reveal-up">Digital Sports Desk è la piattaforma per archiviare tesseramenti, certificati medici e consensi delle Associazioni Sportive Dilettantistiche di Cremona e Brescia — senza più fogli sparsi, WhatsApp e ansia da scadenza.</p>
+      <div class="hero__cta reveal-up">
+        <a href="come-funziona.html" class="btn-dsd-primary">Scopri come funziona</a>
+        <a href="chi-siamo.html" class="btn-dsd-secondary">Chi siamo</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust-strip reveal-up">
+    <p>Progettato insieme a chi vive la segreteria ogni giorno</p>
+    <div class="trust-strip__tags">
+      <span class="sport-tag">Calcio</span>
+      <span class="sport-tag">Basket</span>
+      <span class="sport-tag">Pallavolo</span>
+      <span class="sport-tag">Tennis / Padel</span>
+    </div>
+  </div>
+
+  <div class="showcase reveal-up">
+    <div class="showcase__frame">
+      <picture>
+        <source srcset="assets/dashboard-screenshot.webp" type="image/webp" />
+        <img src="assets/dashboard-screenshot.png" alt="Dashboard reale di Digital Sports Desk: categorie attive e roster atleti con stato dei documenti" loading="lazy" />
+      </picture>
+    </div>
+  </div>
+
+  <section id="problema" class="section section--light">
+    <div class="section__inner">
+      <p class="eyebrow reveal-up">Il problema</p>
+      <h2 class="section__title reveal-up">Ogni stagione, la stessa emergenza.</h2>
+      <p class="section__lead reveal-up">Certificati scaduti, moduli firmati a mano, foto sfocate su WhatsApp: nelle segreterie dilettantistiche l'informazione è sparsa ovunque, e un solo documento mancante può costare una partita — o una sanzione.</p>
+      <div class="stat-grid">
+        <div class="stat-card reveal-up">
+          <span class="stat-card__n">40+</span>
+          <span class="stat-card__t">giorni critici</span>
+          <p>Tra fine agosto e metà ottobre la segreteria riceve centinaia di certificati e tesseramenti in poche settimane.</p>
+        </div>
+        <div class="stat-card reveal-up">
+          <span class="stat-card__n">0</span>
+          <span class="stat-card__t">avvisi automatici</span>
+          <p>Le piattaforme federali attestano, ma non ricordano: nessuno avvisa le famiglie della scadenza in arrivo.</p>
+        </div>
+        <div class="stat-card reveal-up">
+          <span class="stat-card__n">Art. 9</span>
+          <span class="stat-card__t">GDPR — responsabilità dirette</span>
+          <p>Un'idoneità scaduta non gestita espone l'atleta e il presidente dell'ASD a sanzioni disciplinari e civili.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--light" style="padding-top:0;">
+    <div class="section__inner">
+      <p class="eyebrow reveal-up">Come funziona</p>
+      <h2 class="section__title reveal-up">Un'unica fonte di verità, tre punti di vista.</h2>
+      <p class="section__lead reveal-up">Non un modulo infinito, ma tre schermate su misura per chi le usa davvero.</p>
+      <div class="teaser-grid">
+        <a href="come-funziona.html#dashboard" class="teaser-card reveal-up">
+          <span class="teaser-card__index">01</span>
+          <h3>Dashboard segreteria</h3>
+          <p>Le urgenze prima di tutto: certificati scaduti e tesseramenti in scadenza entro 30 giorni — non un elenco alfabetico.</p>
+          <span class="teaser-card__link">Scopri di più →</span>
+        </a>
+        <a href="come-funziona.html#vista-campo" class="teaser-card reveal-up">
+          <span class="teaser-card__index">02</span>
+          <h3>Vista da campo</h3>
+          <p>Allenatori e maestri vedono solo ciò che serve prima di scendere in campo, senza accesso ai dati sanitari.</p>
+          <span class="teaser-card__link">Scopri di più →</span>
+        </a>
+        <a href="come-funziona.html#iscrizione" class="teaser-card reveal-up">
+          <span class="teaser-card__index">03</span>
+          <h3>Iscrizione guidata</h3>
+          <p>Il modulo si scompone in 4 tappe progressive, con consensi separati invece di un'unica pagina infinita.</p>
+          <span class="teaser-card__link">Scopri di più →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--light" style="padding-top:0;">
+    <div class="section__inner">
+      <div class="compare reveal-up">
+        <div class="compare__col compare__col--before">
+          <h3>La vecchia gestione</h3>
+          <ul>
+            <li>Certificati ricevuti su WhatsApp, in ordine sparso</li>
+            <li>Scadenze tracciate a mano su un foglio Excel</li>
+            <li>Un modulo cartaceo unico per tutti i dati, sensibili compresi</li>
+          </ul>
+        </div>
+        <div class="compare__col compare__col--after">
+          <h3>Con DSD</h3>
+          <ul>
+            <li>Un archivio digitale unico, sempre aggiornato</li>
+            <li>Avvisi automatici prima di ogni scadenza</li>
+            <li>Iscrizione a tappe, con consensi separati e minimizzazione dei dati</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ricerca" class="section section--dark">
+    <div class="section__inner">
+      <p class="eyebrow eyebrow--light reveal-up">La ricerca sul campo</p>
+      <h2 class="section__title section__title--light reveal-up">Nato da interviste vere, non da un brief.</h2>
+      <p class="section__lead section__lead--light reveal-up">Prima di disegnare una sola schermata, abbiamo ascoltato chi vive la segreteria ogni giorno: calcio, basket, pallavolo e sport di racchetta, nel territorio tra Cremona e Brescia.</p>
+      <div class="quote-track">
+        <article class="quote-card reveal-up">
+          <div class="quote-card__img" style="background-image:url('assets/img/ricerca-calcio.jpg')"></div>
+          <div class="quote-card__body">
+            <span class="quote-card__sport">Calcio</span>
+            <p>«Il collo di bottiglia è in autunno: centinaia di certificati arrivano insieme, spesso come foto sfocate su WhatsApp.»</p>
+            <span class="quote-card__club">A.C. Castelverde</span>
+          </div>
+        </article>
+        <article class="quote-card reveal-up">
+          <div class="quote-card__img" style="background-image:url('assets/img/ricerca-basket.jpg')"></div>
+          <div class="quote-card__body">
+            <span class="quote-card__sport">Basket</span>
+            <p>«Serve uno strumento consultabile dallo smartphone, a bordo campo, pochi minuti prima della partita.»</p>
+            <span class="quote-card__club">Ju-Vi Ferraroni Cremona — M. Abbiati</span>
+          </div>
+        </article>
+      </div>
+      <a href="chi-siamo.html#ricerca" class="btn-dsd-secondary btn-dsd-secondary--onDark reveal-up" style="margin-top:32px;display:inline-flex;">Leggi tutte le testimonianze</a>
+    </div>
+  </section>
+
+  <section id="valori" class="section section--light">
+    <div class="section__inner">
+      <p class="eyebrow reveal-up">Perché DSD</p>
+      <h2 class="section__title reveal-up">Tre motivi per cui è pensato diversamente.</h2>
+      <div class="reasons-grid">
+        <div class="reason-item reveal-up">
+          <span class="reason-item__n">1</span>
+          <div>
+            <h3>Pensato con chi lo usa</h3>
+            <p>Non un brief in astratto: nasce da interviste vere con società di calcio, basket, pallavolo e sport di racchetta tra Cremona e Brescia.</p>
+          </div>
+        </div>
+        <div class="reason-item reveal-up">
+          <span class="reason-item__n">2</span>
+          <div>
+            <h3>Accessibile e rispettoso dei dati</h3>
+            <p>Contrasti verificati WCAG 2.2, minimizzazione e consensi separati, in linea con GDPR e Riforma dello Sport.</p>
+          </div>
+        </div>
+        <div class="reason-item reveal-up">
+          <span class="reason-item__n">3</span>
+          <div>
+            <h3>Mobile-first, zero fronzoli</h3>
+            <p>Pensato prima per lo smartphone a bordo campo, poi per il desktop in segreteria: solo i dati che servono, quando servono.</p>
+          </div>
+        </div>
+      </div>
+      <a href="chi-siamo.html" class="btn-dsd-secondary reveal-up" style="margin-top:40px;display:inline-flex;">Scopri di più su di noi →</a>
+    </div>
+  </section>
+
+  <section class="section section--dark section--cta">
+    <div class="section__inner section__inner--center">
+      <p class="eyebrow eyebrow--light reveal-up">Il portale</p>
+      <h2 class="section__title section__title--light reveal-up">Porta la tua segreteria nel 2026.</h2>
+      <p class="section__lead section__lead--light reveal-up">Il portale DSD è online: dashboard, scadenziario e roster atleti, pronti da esplorare.</p>
+      <a href="chi-siamo.html#portale" data-portal class="btn-dsd-primary reveal-up">Entra nel portale</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <a class="site-footer__brand-mark" href="index.html" aria-label="Digital Sports Desk — Home"><svg class="mono-svg" viewBox="0 0 225.73 79.76" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon class="m1" fill="#4f9eaf" points="116.88 27.21 146.17 27.2 139.57 0 110.29 0 116.88 27.21"/>
+      <polygon class="m1" fill="#4f9eaf" points="92.91 79.76 122.19 79.76 115.61 52.56 86.53 52.56 92.91 79.76"/>
+      <polygon class="m1" fill="#4f9eaf" points="28.17 40.56 22.88 18.56 30.21 18.56 33.75 18.56 29.29 0 0 0 10.71 44.54 19.16 79.76 48.44 79.76 44 61.21 33.12 61.21 28.17 40.56"/>
+      <path class="m2" fill="#7dcad7" d="M78.16,51.28l-1.61-6.73-6.46-26.85C67.59,7.32,58.3,0,47.63,0h-11.09s4.46,18.55,4.46,18.55h6.18c2.69,0,5.01,1.83,5.64,4.44l5.98,24.84,1.49,6.21c.11.47.17.94.17,1.39,0,2.77-2.22,5.75-5.81,5.75h-3.4s4.45,18.55,4.45,18.55h0c14.93,0,25.94-13.96,22.46-28.48Z"/>
+      <polygon class="m1" fill="#4f9eaf" points="175.09 40.56 169.8 18.56 177.14 18.56 180.67 18.56 176.21 0 146.92 0 157.64 44.54 166.08 79.76 195.36 79.76 190.92 61.21 180.04 61.21 175.09 40.56"/>
+      <path class="m2" fill="#7dcad7" d="M225.08,51.28l-1.61-6.73-6.46-26.85C214.51,7.32,205.23,0,194.55,0h-11.09s4.46,18.55,4.46,18.55h6.18c2.69,0,5.01,1.83,5.64,4.44l5.98,24.84,1.49,6.21c.11.47.17.94.17,1.39,0,2.77-2.22,5.75-5.81,5.75h-3.4s4.45,18.55,4.45,18.55h0c14.93,0,25.94-13.96,22.46-28.48Z"/>
+      <path class="m2" fill="#7dcad7" d="M129.44,79.75h0c14.93.01,25.93-13.95,22.44-28.46l-3.86-16.02-29.28.02h-7.22S103.03,0,103.03,0h-.02c-14.92,0-25.91,13.95-22.42,28.46l3.87,16.08h29.29s0,0,0,0h7.22l8.47,35.2Z"/></svg></a>
+      <p>La piattaforma per la gestione documentale delle Associazioni Sportive Dilettantistiche di Cremona e Brescia — tesseramenti, certificati medici e consensi in un unico posto.</p>
+    </div>
+    <div class="site-footer__cols">
+      <div class="site-footer__col"><h4>Prodotto</h4><a href="chi-siamo.html#prodotto">Il prodotto</a><a href="chi-siamo.html#funzioni">Cosa fa DSD</a><a href="come-funziona.html">Come funziona</a></div>
+      <div class="site-footer__col"><h4>Progetto</h4><a href="chi-siamo.html#ricerca">La ricerca sul campo</a><a href="chi-siamo.html#metodo">Il metodo</a><a href="contatti.html">Contatti</a></div>
+      <div class="site-footer__col"><h4>Portale</h4><a href="chi-siamo.html#portale" data-portal>Entra nel portale</a><a href="mailto:info@digitalsportsdesk.it">info@digitalsportsdesk.it</a></div>
+    </div>
+  </div>
+  <div class="site-footer__bottom"><span>© 2026 Digital Sports Desk. Pensato per chi vive lo sport dilettantistico ogni giorno.</span></div>
+</footer>
+<button id="backToTop" class="back-to-top" aria-label="Torna in cima">↑</button>
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<script src="js/portal.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
